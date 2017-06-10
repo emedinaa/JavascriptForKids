@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Playing with the DOM</title>
+</head>
+<body>
+<h1 id="label">Hello world JS!</h1>
+<script>
+
+var headingElement = document.getElementById("label");
+console.log(headingElement.innerHTML);
+
+var newHeadingText = prompt("Please provide a new heading:");
+headingElement.innerHTML = newHeadingText;
+</script>
+</body>
+</html>

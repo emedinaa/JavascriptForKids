@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Playing with the DOM</title>
+</head>
+<body>
+<canvas id="canvas" width="200" height="200"></canvas>
+<script>
+// We'll fi
+/*
+var canvas= document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+ctx.fillRect(0, 0, 20, 20);*/
+
+/*var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+for (var i = 0; i < 4; i++) {
+	console.log("i-->" +i);
+ctx.fillRect(i * 10, i * 10, 10, 10);
+}*/
+
+/*var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "Red";
+ctx.fillRect(0, 0, 100, 100);*/
+
+/*var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+ctx.strokeRect(10, 10, 100, 20);*/
+
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+ctx.strokeStyle = "Turquoise";
+ctx.lineWidth = 4;
+ctx.beginPath();
+ctx.moveTo(10, 10);
+ctx.lineTo(60, 60);
+ctx.moveTo(60, 10);
+ctx.lineTo(10, 60);
+ctx.stroke();
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Playing with the DOM</title>
+</head>
+<body>
+  <h1 id="label3">I'm button</h1>
+<h1 id="main-heading">Hello world!</h1>
+<h1 id="label2">Hello Javascript</h1>
+
+
+<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+<script>
+
+//$("#main-heading").fadeOut(3000).fadeIn(2000);
+$("#label2").slideUp(1000).slideDown(1000);
+
+var clickHandler = function (event) {
+  console.log("Click! " + event.pageX + " " + event.pageY);
+  alert("Click !");
+};
+
+$("#label3").click(clickHandler);
+</script>
+</body>
+</html>

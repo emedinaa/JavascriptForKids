@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My first proper HTML page</title>
+</head>
+<body>
+<h1>Hello world!</h1>
+<p>My first web page.</p>
+<script>
+/*
+var likesCats = confirm("Do you like cats?");
+if (likesCats) {
+console.log("You're a cool cat!");
+} else {
+console.log("Yeah, that's fine. You're still cool!");
+
+}*/
+//alert("JavaScript is awesome!");
+
+var words = [
+"javascript",
+"monkey",
+"amazing",
+"pancake"
+];
+var word = words[Math.floor(Math.random() * words.length)];
+console.log(word);
+
+var answerArray = [];
+for (var i = 0; i < word.length; i++) {
+answerArray[i] = "_";
+}
+var remainingLetters = word.length;
+console.log(answerArray);
+</script>
+</body>
+</html>
